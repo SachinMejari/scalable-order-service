@@ -176,7 +176,7 @@ public class OrderService {
                         .order(order)
                         .orderSubStatus(orderStates.name())
                         .remarks(requestPayload.getOrderStatus().getComment())
-                        .enteredBy(UserTypes.RESTAURANT_OWNER.name())
+                        .enteredBy(userType.name())
                         .enteredById(requestPayload.getUserId())
                         .isDeleted(false)
                         .isArchived(false)
